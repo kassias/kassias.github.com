@@ -1,0 +1,200 @@
+/************************************************
+	Reset
+************************************************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+a abbr[title] {
+	cursor: pointer;
+}
+
+td, th {
+  text-align: left;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Lucida Grande", Arial, "sans-serif";
+  font-size: 14px;
+  color: #444;
+  background: url("bg.jpg");
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #25548e;
+}
+
+a:hover {
+  color: #173357;
+}
+
+a:active {
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6, ul#nav li {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+  letter-spacing: 1px;
+  float: left;
+}
+
+h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 40px;
+}
+  .js h2 {
+    display: none;
+  }
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+div#container {
+  width: 760px;
+  margin: 0 auto;
+  background: white;
+  border-left: #eeeae2 solid 1px;
+  border-right: #eeeae2 solid 1px;
+  min-height: 100%;
+  position: relative;
+}
+
+div#inner-container {
+  padding: 20px 20px 0 20px;
+}
+
+div#border {
+  background: #25548e;
+  position: absolute;
+  height: 6px;
+  top: 0;
+  width: 100%;
+}
+
+div#header {
+  height: 40px;
+  padding-bottom: 4px;
+  position: relative;
+  border-bottom: #f4f1ec solid 4px;
+  margin: 15px 0;
+}
+
+ul#nav {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+  ul#nav li {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    height: 20px;
+  }
+    ul#nav li a {
+      color: #444;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: block;
+    }
+    ul#nav li a.active {
+      border-bottom: #ded8cd solid 4px;
+      padding-bottom: 4px;
+    }
+    ul#nav li a:hover {
+      border-bottom: #ded8cd solid 4px;
+      padding-bottom: 4px;
+    }
+
+div#content {
+  clear: both;
+  position: relative;
+}
+  div.section {
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: #ded8cd solid 4px;
+  }
+    div.section *:first-child {
+      margin-top: 0;
+    }
+    div.section *:last-child {
+      margin-bottom: 0;
+    }
+  .js div.section {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    border-bottom: none;
+  }
+  .js div.section.active {
+    visibility: visible;
+  }
+  div.section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+img#photo {
+  float: right;
+  margin-left: 20px;
+}
+
+p, ul {
+  margin: 1em 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+}
