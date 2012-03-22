@@ -236,3 +236,11 @@ h4 {
 h5 + ul {
   margin-top: 5px;
 }
+
+p.contact {
+  margin-top: 20px;
+  background: url("divider.png") no-repeat top center;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 11px;
+}
