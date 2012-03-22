@@ -171,10 +171,10 @@ div#content {
     padding: 15px 0;
     border-bottom: #ded8cd solid 4px;
   }
-    div.section *:first-child {
+    div.section > *:first-child {
       margin-top: 0;
     }
-    div.section *:last-child {
+    div.section > *:last-child {
       margin-bottom: 0;
     }
   .js div.section {
@@ -193,7 +193,10 @@ div#content {
 
 img#photo {
   float: right;
-  margin-left: 20px;
+}
+
+div#photo-offset {
+  margin-right: 320px;
 }
 
 p, ul {
@@ -219,26 +222,32 @@ h3 {
   margin-bottom: 15px;
   padding-top: 15px;
 }
-  h2 + h3, img + h3 {
+  h2 + h3, div#photo-offset h3 {
     border-top: none;
     margin-top: 0;
     padding-top: 0;
   }
 
-h4 {
-  margin-bottom: 5px;
+li h5 {
+  margin-top: 10px;
 }
-  ul + h4 {
-    margin-top: 15px;
-  }
 
-
-h5 + ul {
+li ul {
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
 h4 + h5 {
-  margin-bottom: 10px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+ul + h4 {
+  margin-top: 20px;
+}
+
+h5 a {
+  text-transform: lowercase;
 }
 
 p.contact {
