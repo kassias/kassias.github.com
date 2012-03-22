@@ -178,13 +178,13 @@ div#content {
       margin-bottom: 0;
     }
   .js div.section {
-    visibility: hidden;
+    display: none;
     position: absolute;
     width: 100%;
     border-bottom: none;
   }
   .js div.section.active {
-    visibility: visible;
+    display: block;
   }
   div.section:last-child {
     margin-bottom: 0;

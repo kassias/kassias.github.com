@@ -1,14 +1,16 @@
+function adjust_height(el) {
+  $("#content").css("height", ($(el).height() + 40) + "px");
+}
+
 $(document).ready(function() {
   $("html").removeClass("no-js").addClass("js");
-  
-  $("ul#nav a").attr("href", "#_");
-  
-  $("#content").css("height", (Math.max.apply(Math, $(".section").map(function() {
-    return $(this).height() + 40;
-  }).get())) + "px");
+
+  adjust_height($("#content > div:first-child"));
   
   $("ul#nav a").click(function(e) {
     var rel = $(this).attr("rel");
+    
+    adjust_height($("#" + rel));
     
     $(".section.active").animate({
       opacity: 0
@@ -22,13 +24,6 @@ $(document).ready(function() {
     $("ul#nav a.active").removeClass("active");
     $(this).addClass("active");
     
-    location.hash = rel;
-    $('body').scrollTop(0);
-    
     e.preventDefault();
   });
-
-  if ((anchor = document.location.href.match(/#(.*)$/)) != null) {
-    $("ul#nav a[rel=" + anchor[1] + "]").not("ul#nav a.active").click();
-  }
 });
